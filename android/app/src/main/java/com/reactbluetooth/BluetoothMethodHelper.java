@@ -21,6 +21,14 @@ public class BluetoothMethodHelper extends ReactContextBaseJavaModule {
        Log.d("BluetoothMethodHelper", "Getting module name");
         return "BluetoothMethodHelper";
    }
+  
+   @ReactMethod //metoda wywoływania na podstawie indexu
+   public void controlDevice(String index) {
+   String sendtxt = index + "\n";
+   MainActivity.getBtt().write(sendtxt.getBytes());
+   Log.d("BluetoothMethodHelper", sendtxt);
+   }
+
 
    @ReactMethod
    public void ledOn() {

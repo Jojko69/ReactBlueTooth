@@ -8,7 +8,7 @@ import {
   Alert,
   ImageBackground,
 } from 'react-native';
-import BluetoothMethodHelper from './BluetoothMethodHelper';
+import BluetoothMethodHelper from '../BluetoothMethodHelper';
 
 interface LoginScreenProps {
   onLoginSuccess: () => void;
@@ -29,7 +29,7 @@ function LoginScreen({onLoginSuccess}: LoginScreenProps) {
 
   return (
     <ImageBackground
-      source={require('./assets/smart-home.png')} // Ścieżka do pliku graficznego
+      source={require('../assets/smart-home.png')} // Ścieżka do pliku graficznego
       style={styles.backgroundImage}>
       <View style={styles.container}>
         <Text style={styles.title}>Smart Home</Text>
@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start', // Pozycjonuj napis od góry
     marginTop: 20, // Dodaj margines od góry
+    backgroundColor: 'rgba(0, 0, 0, 0.0)', // Przeźroczysty czarny
   },
   backgroundImage: {
     flex: 1,
@@ -81,7 +82,7 @@ const styles = StyleSheet.create({
   loginContainer: {
     justifyContent: 'flex-end',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 0.0)',
     padding: 20,
     height: '17%',
   },
@@ -93,6 +94,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     paddingHorizontal: 10,
     marginBottom: 10,
+    backgroundColor: 'rgba(0, 0, 0, 0.1)',
   },
   pinInput: {
     flex: 1,
