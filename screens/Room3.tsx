@@ -41,12 +41,12 @@ function Room3() {
       <Text style={styles.roomStering}>Gniazdo TV</Text>
       <View style={styles.row}>
         <TouchableOpacity
-          onPress={() => handleDeviceControl('10D')}
+          onPress={() => handleDeviceControl('12rD')}
           style={styles.buttonOff}>
           <Text style={styles.buttonText}>Off</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => handleDeviceControl('10U')}
+          onPress={() => handleDeviceControl('12U')}
           style={styles.buttonOn}>
           <Text style={styles.buttonText}>On</Text>
         </TouchableOpacity>

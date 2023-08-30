@@ -65,7 +65,7 @@ public class BluetoothMethodHelper extends ReactContextBaseJavaModule {
       sendToArduino(pin);
   
       // Przykład: (tu musisz dodać odpowiedni kod do obsługi odpowiedzi)
-listenForArduinoResponse((response) -> {
+   listenForArduinoResponse((response) -> {
     // Zakładając, że 'response' to tablica i chcesz jej pierwszy element:
     String responseString = (String) response[0];
     
